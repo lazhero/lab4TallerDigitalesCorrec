@@ -1,6 +1,6 @@
 Flow report for TICTACTOE
-Sat Oct 01 19:36:36 2022
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Sun Oct 02 14:22:34 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -41,25 +41,25 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sat Oct 01 19:36:36 2022       ;
-; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Flow Status                     ; Successful - Sun Oct 02 14:22:34 2022       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; TICTACTOE                                   ;
-; Top-level Entity Name           ; TicTacToe                                   ;
+; Top-level Entity Name           ; VGA_Controller                              ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 71                                          ;
-; Total pins                      ; 23                                          ;
+; Logic utilization (in ALMs)     ; 54 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 89                                          ;
+; Total pins                      ; 29 / 457 ( 6 % )                            ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
 ; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
 +---------------------------------+---------------------------------------------+
 
 
@@ -68,40 +68,45 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/01/2022 19:36:24 ;
+; Start date & time ; 10/02/2022 14:21:48 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; TICTACTOE           ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 92668497380646.166467458416852         ; --            ; --          ; --                                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; TicTacToeTest                     ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TicTacToeTest                          ; --            ; --          ; eda_simulation                    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --                                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
-; EDA_TEST_BENCH_FILE                  ; TicTacToeTest.sv                       ; --            ; --          ; TicTacToeTest                     ;
-; EDA_TEST_BENCH_MODULE_NAME           ; TicTacToeTest                          ; --            ; --          ; TicTacToeTest                     ;
-; EDA_TEST_BENCH_NAME                  ; TicTacToeTest                          ; --            ; --          ; eda_simulation                    ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; TicTacToe   ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; TicTacToe   ; Top                               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; TicTacToe   ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
-+--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                   ;
++--------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name    ; Section Id                        ;
++--------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 237901792325154.166474210817140        ; --            ; --             ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; test_vga_Controller               ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; TicTacToeTest                     ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --             ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --             ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --             ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --             ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; test_vga_Controller                    ; --            ; --             ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --             ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --             ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --             ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; test_vga_Controller.sv                 ; --            ; --             ; test_vga_Controller               ;
+; EDA_TEST_BENCH_FILE                  ; TicTacToeTest.sv                       ; --            ; --             ; TicTacToeTest                     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; test_vga_Controller                    ; --            ; --             ; test_vga_Controller               ;
+; EDA_TEST_BENCH_MODULE_NAME           ; TicTacToeTest                          ; --            ; --             ; TicTacToeTest                     ;
+; EDA_TEST_BENCH_NAME                  ; TicTacToeTest                          ; --            ; --             ; eda_simulation                    ;
+; EDA_TEST_BENCH_NAME                  ; test_vga_Controller                    ; --            ; --             ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --             ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --             ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --             ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; VGA_Controller ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; VGA_Controller ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; VGA_Controller ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --             ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --             ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --             ; --                                ;
+; TOP_LEVEL_ENTITY                     ; VGA_Controller                         ; TICTACTOE     ; --             ; --                                ;
++--------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -109,8 +114,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4822 MB             ; 00:00:30                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:30                           ;
+; Analysis & Synthesis ; 00:00:06     ; 1.0                     ; 4883 MB             ; 00:00:13                           ;
+; Fitter               ; 00:00:28     ; 1.0                     ; 7328 MB             ; 00:01:25                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4836 MB             ; 00:00:05                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.2                     ; 5220 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4726 MB             ; 00:00:01                           ;
+; Total                ; 00:00:42     ; --                      ; --                  ; 00:01:48                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,7 +128,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-N7U5SP6  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; Domtaxx          ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; Domtaxx          ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; Domtaxx          ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; Domtaxx          ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; Domtaxx          ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -127,6 +140,10 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off TICTACTOE -c TICTACTOE
+quartus_fit --read_settings_files=off --write_settings_files=off TICTACTOE -c TICTACTOE
+quartus_asm --read_settings_files=off --write_settings_files=off TICTACTOE -c TICTACTOE
+quartus_sta TICTACTOE -c TICTACTOE
+quartus_eda --read_settings_files=off --write_settings_files=off TICTACTOE -c TICTACTOE
 
 
 

@@ -39,10 +39,10 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY TicTacToe
+set_global_assignment -name TOP_LEVEL_ENTITY VGA_Controller
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:08:52  OCTOBER 01, 2022"
-set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "DE1-SoC Board"
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
@@ -76,13 +76,46 @@ set_global_assignment -name SYSTEMVERILOG_FILE cronometer.sv
 set_global_assignment -name SYSTEMVERILOG_FILE clock_divider.sv
 set_global_assignment -name SYSTEMVERILOG_FILE checkEmpty.sv
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH TicTacToeTest -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH test_vga_Controller -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME TicTacToeTest -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id TicTacToeTest
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME TicTacToeTest -section_id TicTacToeTest
-set_global_assignment -name EDA_TEST_BENCH_FILE TicTacToeTest.sv -section_id TicTacToeTest
 set_global_assignment -name SYSTEMVERILOG_FILE muxCustom.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_FILE TicTacToeTest.sv -section_id TicTacToeTest
+set_global_assignment -name EDA_TEST_BENCH_NAME test_vga_Controller -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id test_vga_Controller
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME test_vga_Controller -section_id test_vga_Controller
+set_global_assignment -name EDA_TEST_BENCH_FILE test_vga_Controller.sv -section_id test_vga_Controller
+set_location_assignment PIN_J14 -to Blue[7]
+set_location_assignment PIN_G15 -to Blue[6]
+set_location_assignment PIN_F15 -to Blue[5]
+set_location_assignment PIN_H14 -to Blue[4]
+set_location_assignment PIN_F14 -to Blue[3]
+set_location_assignment PIN_H13 -to Blue[2]
+set_location_assignment PIN_G13 -to Blue[1]
+set_location_assignment PIN_B13 -to Blue[0]
+set_location_assignment PIN_E11 -to Green[7]
+set_location_assignment PIN_F11 -to Green[6]
+set_location_assignment PIN_G12 -to Green[5]
+set_location_assignment PIN_G11 -to Green[4]
+set_location_assignment PIN_G10 -to Green[3]
+set_location_assignment PIN_H12 -to Green[2]
+set_location_assignment PIN_J10 -to Green[1]
+set_location_assignment PIN_J9 -to Green[0]
+set_location_assignment PIN_B11 -to Hsync
+set_location_assignment PIN_D11 -to Vsync
+set_location_assignment PIN_A11 -to VGA_clk
+set_location_assignment PIN_F13 -to Red[7]
+set_location_assignment PIN_E12 -to Red[6]
+set_location_assignment PIN_D12 -to Red[5]
+set_location_assignment PIN_C12 -to Red[4]
+set_location_assignment PIN_B12 -to Red[3]
+set_location_assignment PIN_E13 -to Red[2]
+set_location_assignment PIN_C13 -to Red[1]
+set_location_assignment PIN_A13 -to Red[0]
+set_location_assignment PIN_AF14 -to clk
+set_location_assignment PIN_AE12 -to rst
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
