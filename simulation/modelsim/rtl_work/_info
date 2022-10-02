@@ -1,0 +1,280 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/simulation/modelsim
+vcheckEmpty
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1664674717
+!i10b 1
+!s100 M_]7_ETJ:U[an2z4NQ[FS2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ie2OSPAJBa1S6BbU0D[^JG3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1664668163
+8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv
+FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv
+!i122 7
+L0 1 22
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1664674717.000000
+!s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work {+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing}
+Z9 tCvgOpt 0
+ncheck@empty
+vcronometer
+R1
+R2
+!i10b 1
+!s100 gbXXmFg88EV<WB5DT55DJ0
+R3
+Ig<bmk]C2^IShbLN1H?DPJ1
+R4
+S1
+R0
+w1664673348
+8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv
+FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv
+!i122 6
+L0 1 27
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv|
+!i113 1
+R7
+R8
+R9
+vmuxCustom
+R1
+R2
+!i10b 1
+!s100 6HfYA6gIM==@FE^<YG0cU2
+R3
+IGalej`M`BGmGV2FYAf5hi3
+R4
+S1
+R0
+w1664670370
+8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv
+FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv
+!i122 8
+L0 1 11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv|
+!i113 1
+R7
+R8
+R9
+nmux@custom
+vplayerIterator
+R1
+R2
+!i10b 1
+!s100 @9L42>hD5jjQ`S15O=6aW3
+R3
+I>8aHJ2>8N2QfT`MNH:48f2
+R4
+S1
+R0
+w1664642664
+8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playerIterator.sv
+FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playerIterator.sv
+!i122 5
+L0 1 20
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playerIterator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playerIterator.sv|
+!i113 1
+R7
+R8
+R9
+nplayer@iterator
+vplayGrill
+R1
+R2
+!i10b 1
+!s100 K?z[<L0b8eR2:kHN3>GC33
+R3
+IMY?^_zP3fema;6Q7gD<TG2
+R4
+S1
+R0
+w1663387327
+8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv
+FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv
+!i122 4
+L0 1 13
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv|
+!i113 1
+R7
+R8
+R9
+nplay@grill
+vpositionMachine
+R1
+R2
+!i10b 1
+!s100 lO7EKbK>cFa<>9hgHQjQ40
+R3
+IoCGLU?^a?h5jLEO?G5=UQ2
+R4
+S1
+R0
+w1663862879
+8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv
+FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv
+!i122 3
+L0 1 31
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv|
+!i113 1
+R7
+R8
+R9
+nposition@machine
+vrandomModule
+R1
+R2
+!i10b 1
+!s100 ;O0`dd1IVAZ=UDMHZ1K[52
+R3
+I3XTQmD0X29[WRiVTDj^GF1
+R4
+S1
+R0
+w1664674580
+8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv
+FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv
+!i122 2
+L0 1 21
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv|
+!i113 1
+R7
+R8
+R9
+nrandom@module
+vsquareBox
+R1
+R2
+!i10b 1
+!s100 mmHcgMOAdKzc87SP<LA8<2
+R3
+Il4RbELW]dSheS=6E;8Qg@0
+R4
+S1
+R0
+w1663426615
+8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv
+FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv
+!i122 1
+L0 1 28
+R5
+r1
+!s85 0
+31
+Z10 !s108 1664674716.000000
+!s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv|
+!i113 1
+R7
+R8
+R9
+nsquare@box
+vTicTacToe
+R1
+!s110 1664674716
+!i10b 1
+!s100 K^H7HH9NHi]D59TMUe7Re1
+R3
+In5GAM;aT;Q`c18kJNBgej1
+R4
+S1
+R0
+w1664670441
+8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv
+FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv
+!i122 0
+L0 2 25
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv|
+!i113 1
+R7
+R8
+R9
+n@tic@tac@toe
+vTicTacToeTest
+R1
+R2
+!i10b 1
+!s100 :VQB`ITMDo4SI]2n9lET01
+R3
+IdT]OSF>4X>Xh6;VBUiPT@0
+R4
+S1
+R0
+w1664673594
+8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv
+FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv
+!i122 9
+L0 2 107
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv|
+!i113 1
+R7
+R8
+R9
+n@tic@tac@toe@test

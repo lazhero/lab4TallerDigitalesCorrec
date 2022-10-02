@@ -1,0 +1,634 @@
+Analysis & Synthesis report for TICTACTOE
+Sat Oct 01 19:36:36 2022
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |TicTacToe|playGrill:grill|squareBox:c8|state
+  9. State Machine - |TicTacToe|playGrill:grill|squareBox:c7|state
+ 10. State Machine - |TicTacToe|playGrill:grill|squareBox:c6|state
+ 11. State Machine - |TicTacToe|playGrill:grill|squareBox:c5|state
+ 12. State Machine - |TicTacToe|playGrill:grill|squareBox:c4|state
+ 13. State Machine - |TicTacToe|playGrill:grill|squareBox:c3|state
+ 14. State Machine - |TicTacToe|playGrill:grill|squareBox:c2|state
+ 15. State Machine - |TicTacToe|playGrill:grill|squareBox:c1|state
+ 16. State Machine - |TicTacToe|playGrill:grill|squareBox:c0|state
+ 17. State Machine - |TicTacToe|positionMachine:myPositionMachine|state
+ 18. Registers Removed During Synthesis
+ 19. General Register Statistics
+ 20. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 21. Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c0
+ 22. Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c1
+ 23. Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c2
+ 24. Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c3
+ 25. Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c4
+ 26. Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c5
+ 27. Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c6
+ 28. Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c7
+ 29. Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c8
+ 30. Post-Synthesis Netlist Statistics for Top Partition
+ 31. Elapsed Time Per Partition
+ 32. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sat Oct 01 19:36:36 2022       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; TICTACTOE                                   ;
+; Top-level Entity Name           ; TicTacToe                                   ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 71                                          ;
+; Total pins                      ; 23                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; TicTacToe          ; TICTACTOE          ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                             ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+; TicTacToe.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv       ;         ;
+; squareBox.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv       ;         ;
+; randomModule.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv    ;         ;
+; positionMachine.sv               ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv ;         ;
+; playGrill.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv       ;         ;
+; playerIterator.sv                ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playerIterator.sv  ;         ;
+; cronometer.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv      ;         ;
+; checkEmpty.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv      ;         ;
+; muxCustom.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv       ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 109       ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 152       ;
+;     -- 7 input functions                    ; 3         ;
+;     -- 6 input functions                    ; 62        ;
+;     -- 5 input functions                    ; 32        ;
+;     -- 4 input functions                    ; 18        ;
+;     -- <=3 input functions                  ; 37        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 71        ;
+;                                             ;           ;
+; I/O pins                                    ; 23        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; rst~input ;
+; Maximum fan-out                             ; 71        ;
+; Total fan-out                               ; 992       ;
+; Average fan-out                             ; 3.69      ;
++---------------------------------------------+-----------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name     ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-----------------+--------------+
+; |TicTacToe                             ; 152 (44)            ; 71 (0)                    ; 0                 ; 0          ; 23   ; 0            ; |TicTacToe                                   ; TicTacToe       ; work         ;
+;    |checkEmpty:myCheckPosRandom|       ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|checkEmpty:myCheckPosRandom       ; checkEmpty      ; work         ;
+;    |checkEmpty:myCheckPos|             ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|checkEmpty:myCheckPos             ; checkEmpty      ; work         ;
+;    |cronometer:mycronometer|           ; 37 (37)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|cronometer:mycronometer           ; cronometer      ; work         ;
+;    |muxCustom:themux|                  ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|muxCustom:themux                  ; muxCustom       ; work         ;
+;    |playGrill:grill|                   ; 41 (0)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill                   ; playGrill       ; work         ;
+;       |squareBox:c0|                   ; 5 (5)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c0      ; squareBox       ; work         ;
+;       |squareBox:c1|                   ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c1      ; squareBox       ; work         ;
+;       |squareBox:c2|                   ; 4 (4)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c2      ; squareBox       ; work         ;
+;       |squareBox:c3|                   ; 5 (5)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c3      ; squareBox       ; work         ;
+;       |squareBox:c4|                   ; 5 (5)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c4      ; squareBox       ; work         ;
+;       |squareBox:c5|                   ; 4 (4)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c5      ; squareBox       ; work         ;
+;       |squareBox:c6|                   ; 4 (4)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c6      ; squareBox       ; work         ;
+;       |squareBox:c7|                   ; 5 (5)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c7      ; squareBox       ; work         ;
+;       |squareBox:c8|                   ; 6 (6)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c8      ; squareBox       ; work         ;
+;    |playerIterator:myiterator|         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playerIterator:myiterator         ; playerIterator  ; work         ;
+;    |positionMachine:myPositionMachine| ; 5 (5)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|positionMachine:myPositionMachine ; positionMachine ; work         ;
+;    |randomModule:myrandom|             ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|randomModule:myrandom             ; randomModule    ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------+
+; State Machine - |TicTacToe|playGrill:grill|squareBox:c8|state ;
++----------+----------+----------+------------------------------+
+; Name     ; state.00 ; state.10 ; state.01                     ;
++----------+----------+----------+------------------------------+
+; state.00 ; 0        ; 0        ; 0                            ;
+; state.01 ; 1        ; 0        ; 1                            ;
+; state.10 ; 1        ; 1        ; 0                            ;
++----------+----------+----------+------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------+
+; State Machine - |TicTacToe|playGrill:grill|squareBox:c7|state ;
++----------+----------+----------+------------------------------+
+; Name     ; state.00 ; state.10 ; state.01                     ;
++----------+----------+----------+------------------------------+
+; state.00 ; 0        ; 0        ; 0                            ;
+; state.01 ; 1        ; 0        ; 1                            ;
+; state.10 ; 1        ; 1        ; 0                            ;
++----------+----------+----------+------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------+
+; State Machine - |TicTacToe|playGrill:grill|squareBox:c6|state ;
++----------+----------+----------+------------------------------+
+; Name     ; state.00 ; state.10 ; state.01                     ;
++----------+----------+----------+------------------------------+
+; state.00 ; 0        ; 0        ; 0                            ;
+; state.01 ; 1        ; 0        ; 1                            ;
+; state.10 ; 1        ; 1        ; 0                            ;
++----------+----------+----------+------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------+
+; State Machine - |TicTacToe|playGrill:grill|squareBox:c5|state ;
++----------+----------+----------+------------------------------+
+; Name     ; state.00 ; state.10 ; state.01                     ;
++----------+----------+----------+------------------------------+
+; state.00 ; 0        ; 0        ; 0                            ;
+; state.01 ; 1        ; 0        ; 1                            ;
+; state.10 ; 1        ; 1        ; 0                            ;
++----------+----------+----------+------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------+
+; State Machine - |TicTacToe|playGrill:grill|squareBox:c4|state ;
++----------+----------+----------+------------------------------+
+; Name     ; state.00 ; state.10 ; state.01                     ;
++----------+----------+----------+------------------------------+
+; state.00 ; 0        ; 0        ; 0                            ;
+; state.01 ; 1        ; 0        ; 1                            ;
+; state.10 ; 1        ; 1        ; 0                            ;
++----------+----------+----------+------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------+
+; State Machine - |TicTacToe|playGrill:grill|squareBox:c3|state ;
++----------+----------+----------+------------------------------+
+; Name     ; state.00 ; state.10 ; state.01                     ;
++----------+----------+----------+------------------------------+
+; state.00 ; 0        ; 0        ; 0                            ;
+; state.01 ; 1        ; 0        ; 1                            ;
+; state.10 ; 1        ; 1        ; 0                            ;
++----------+----------+----------+------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------+
+; State Machine - |TicTacToe|playGrill:grill|squareBox:c2|state ;
++----------+----------+----------+------------------------------+
+; Name     ; state.00 ; state.10 ; state.01                     ;
++----------+----------+----------+------------------------------+
+; state.00 ; 0        ; 0        ; 0                            ;
+; state.01 ; 1        ; 0        ; 1                            ;
+; state.10 ; 1        ; 1        ; 0                            ;
++----------+----------+----------+------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------+
+; State Machine - |TicTacToe|playGrill:grill|squareBox:c1|state ;
++----------+----------+----------+------------------------------+
+; Name     ; state.00 ; state.10 ; state.01                     ;
++----------+----------+----------+------------------------------+
+; state.00 ; 0        ; 0        ; 0                            ;
+; state.01 ; 1        ; 0        ; 1                            ;
+; state.10 ; 1        ; 1        ; 0                            ;
++----------+----------+----------+------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------+
+; State Machine - |TicTacToe|playGrill:grill|squareBox:c0|state ;
++----------+----------+----------+------------------------------+
+; Name     ; state.00 ; state.10 ; state.01                     ;
++----------+----------+----------+------------------------------+
+; state.00 ; 0        ; 0        ; 0                            ;
+; state.01 ; 1        ; 0        ; 1                            ;
+; state.10 ; 1        ; 1        ; 0                            ;
++----------+----------+----------+------------------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |TicTacToe|positionMachine:myPositionMachine|state                                                              ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+
+; Name       ; state.0111 ; state.0110 ; state.0101 ; state.0100 ; state.0011 ; state.0010 ; state.0001 ; state.0000 ; state.1000 ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+
+; state.0000 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ;
+; state.0001 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 1          ; 0          ;
+; state.0010 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 1          ; 0          ;
+; state.0011 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 1          ; 0          ;
+; state.0100 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 1          ; 0          ;
+; state.0101 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ;
+; state.0110 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ;
+; state.0111 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ;
+; state.1000 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 1          ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+------------+
+
+
++----------------------------------------------------------------+
+; Registers Removed During Synthesis                             ;
++-------------------------------------------+--------------------+
+; Register name                             ; Reason for Removal ;
++-------------------------------------------+--------------------+
+; positionMachine:myPositionMachine|state~4 ; Lost fanout        ;
+; positionMachine:myPositionMachine|state~5 ; Lost fanout        ;
+; positionMachine:myPositionMachine|state~6 ; Lost fanout        ;
+; Total Number of Removed Registers = 3     ;                    ;
++-------------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 71    ;
+; Number of registers using Synchronous Clear  ; 30    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 71    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 9     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |TicTacToe|cronometer:mycronometer|count[29] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c0 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; id_code        ; 0000  ; Unsigned Binary                                  ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c1 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; id_code        ; 0001  ; Unsigned Binary                                  ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c2 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; id_code        ; 0010  ; Unsigned Binary                                  ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c3 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; id_code        ; 0011  ; Unsigned Binary                                  ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c4 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; id_code        ; 0100  ; Unsigned Binary                                  ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c5 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; id_code        ; 0101  ; Unsigned Binary                                  ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c6 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; id_code        ; 0110  ; Unsigned Binary                                  ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c7 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; id_code        ; 0111  ; Unsigned Binary                                  ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: playGrill:grill|squareBox:c8 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; id_code        ; 1000  ; Unsigned Binary                                  ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 71                          ;
+;     CLR               ; 32                          ;
+;     CLR SCLR          ; 30                          ;
+;     ENA CLR           ; 9                           ;
+; arriav_lcell_comb     ; 152                         ;
+;     arith             ; 30                          ;
+;         1 data inputs ; 30                          ;
+;     extend            ; 3                           ;
+;         7 data inputs ; 3                           ;
+;     normal            ; 119                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 18                          ;
+;         5 data inputs ; 32                          ;
+;         6 data inputs ; 62                          ;
+; boundary_port         ; 23                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.71                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Sat Oct 01 19:36:24 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TICTACTOE -c TICTACTOE
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file tictactoetest.sv
+    Info (12023): Found entity 1: TicTacToeTest File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.sv
+    Info (12023): Found entity 1: VGA_Controller File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/VGA_Controller.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file vertical_counter.sv
+    Info (12023): Found entity 1: vertical_counter File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/vertical_counter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tictactoe.sv
+    Info (12023): Found entity 1: TicTacToe File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file test_vga_controller.sv
+    Info (12023): Found entity 1: test_vga_Controller File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/test_vga_Controller.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file squareboxtest.sv
+    Info (12023): Found entity 1: squareBoxTest File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBoxTest.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file squarebox.sv
+    Info (12023): Found entity 1: squareBox File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file randommodule.sv
+    Info (12023): Found entity 1: randomModule File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file positiontest.sv
+    Info (12023): Found entity 1: positionTest File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionTest.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file positionmachine.sv
+    Info (12023): Found entity 1: positionMachine File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file playgrill.sv
+    Info (12023): Found entity 1: playGrill File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file playeriterator.sv
+    Info (12023): Found entity 1: playerIterator File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playerIterator.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux21.sv
+    Info (12023): Found entity 1: mux21 File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/mux21.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file maquinacomportamiento.sv
+    Info (12023): Found entity 1: MaquinaComportamiento File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/MaquinaComportamiento.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file horizontal_counter.sv
+    Info (12023): Found entity 1: horizontal_counter File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/horizontal_counter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file game.sv
+    Info (12023): Found entity 1: game File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/game.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file cronometer.sv
+    Info (12023): Found entity 1: cronometer File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clock_divider.sv
+    Info (12023): Found entity 1: clock_divider File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/clock_divider.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file checkempty.sv
+    Info (12023): Found entity 1: checkEmpty File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file muxcustom.sv
+    Info (12023): Found entity 1: muxCustom File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv Line: 1
+Info (12127): Elaborating entity "TicTacToe" for the top level hierarchy
+Info (12128): Elaborating entity "positionMachine" for hierarchy "positionMachine:myPositionMachine" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 9
+Info (12128): Elaborating entity "randomModule" for hierarchy "randomModule:myrandom" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 11
+Warning (10230): Verilog HDL assignment warning at randomModule.sv(13): truncated value with size 32 to match size of target (4) File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv Line: 13
+Info (12128): Elaborating entity "muxCustom" for hierarchy "muxCustom:themux" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 12
+Info (12128): Elaborating entity "playGrill" for hierarchy "playGrill:grill" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 13
+Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c0" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 3
+Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c1" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 4
+Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c2" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 5
+Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c3" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 6
+Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c4" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 7
+Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c5" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 8
+Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c6" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 9
+Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c7" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 10
+Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c8" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 11
+Info (12128): Elaborating entity "playerIterator" for hierarchy "playerIterator:myiterator" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 14
+Info (12128): Elaborating entity "cronometer" for hierarchy "cronometer:mycronometer" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at cronometer.sv(21): truncated value with size 32 to match size of target (30) File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv Line: 21
+Info (12128): Elaborating entity "checkEmpty" for hierarchy "checkEmpty:myCheckPos" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 18
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 182 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 18 output pins
+    Info (21061): Implemented 159 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4822 megabytes
+    Info: Processing ended: Sat Oct 01 19:36:36 2022
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:30
+
+
