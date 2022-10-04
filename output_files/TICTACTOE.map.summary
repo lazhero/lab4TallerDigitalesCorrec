@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun Oct 02 14:21:54 2022
+Analysis & Synthesis Status : Successful - Mon Oct 03 21:57:46 2022
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : TICTACTOE
 Top-level Entity Name : VGA_Controller
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 63
+Total registers : 86
 Total pins : 29
 Total virtual pins : 0
 Total block memory bits : 0

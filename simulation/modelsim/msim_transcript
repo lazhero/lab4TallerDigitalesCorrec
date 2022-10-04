@@ -12,39 +12,39 @@
 # 
 # vlog -sv -work work +incdir+D:/Git/lab4TallerDigitalesCorrec {D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:03:09 on Oct 02,2022
+# Start time: 19:34:20 on Oct 03,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/lab4TallerDigitalesCorrec" D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv 
 # -- Compiling module VGA_Controller
 # 
 # Top level modules:
 # 	VGA_Controller
-# End time: 14:03:09 on Oct 02,2022, Elapsed time: 0:00:00
+# End time: 19:34:20 on Oct 03,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/Git/lab4TallerDigitalesCorrec {D:/Git/lab4TallerDigitalesCorrec/clock_divider.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:03:09 on Oct 02,2022
+# Start time: 19:34:20 on Oct 03,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/lab4TallerDigitalesCorrec" D:/Git/lab4TallerDigitalesCorrec/clock_divider.sv 
 # -- Compiling module clock_divider
 # 
 # Top level modules:
 # 	clock_divider
-# End time: 14:03:09 on Oct 02,2022, Elapsed time: 0:00:00
+# End time: 19:34:20 on Oct 03,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+D:/Git/lab4TallerDigitalesCorrec {D:/Git/lab4TallerDigitalesCorrec/test_vga_Controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:03:09 on Oct 02,2022
+# Start time: 19:34:20 on Oct 03,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/Git/lab4TallerDigitalesCorrec" D:/Git/lab4TallerDigitalesCorrec/test_vga_Controller.sv 
 # -- Compiling module test_vga_Controller
 # 
 # Top level modules:
 # 	test_vga_Controller
-# End time: 14:03:09 on Oct 02,2022, Elapsed time: 0:00:00
+# End time: 19:34:20 on Oct 03,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  test_vga_Controller
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" test_vga_Controller 
-# Start time: 14:03:09 on Oct 02,2022
+# Start time: 19:34:21 on Oct 03,2022
 # Loading sv_std.std
 # Loading work.test_vga_Controller
 # Loading work.VGA_Controller
@@ -56,7 +56,18 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+add wave -position insertpoint  \
+sim:/test_vga_Controller/My_VGA_Controller/H_count_value
+add wave -position insertpoint  \
+sim:/test_vga_Controller/My_VGA_Controller/V_count_value
 # Break key hit
 # Break in Module test_vga_Controller at D:/Git/lab4TallerDigitalesCorrec/test_vga_Controller.sv line 13
-# End time: 14:05:29 on Oct 02,2022, Elapsed time: 0:02:20
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Break key hit
+# Simulation stop requested.
+# End time: 19:44:42 on Oct 03,2022, Elapsed time: 0:10:21
 # Errors: 0, Warnings: 0

@@ -15,9 +15,24 @@ clock_divider clk_divider(clk,clk_25Mhz);
 logic enable_v_counter = 0;
 logic[7:0] r_red,r_blue,r_green;
 
+parameter ff = 8'hff;
+parameter bei = 8'd128;
+parameter ge = 8'd35;
 
 reg [15:0] H_count_value = 0; 
 reg [15:0] V_count_value = 0;
+
+
+Pixel_On_Text2 #(.displayText("X")) t1(
+                CLK_VGA,
+                200, // text position.x (top left)
+                200, // text position.y (top left)
+                VGA_horzCoord, // current position.x
+                VGA_vertCoord, // current position.y
+                res  // result, 1 if current pixel is on text, 0 otherwise
+            );
+
+
 
 always @(posedge clk_25Mhz or posedge rst)
 
@@ -69,80 +84,112 @@ assign Vsync = (V_count_value >= 0 && V_count_value < 2)  ? 1:0;
 //assign Red   = (H_count_value > 144 && H_count_value < 783 && V_count_value > 35 && V_count_value <= 514) ? 8'hFF:8'h00;
 //assign Green = (H_count_value > 144 && H_count_value < 783 && V_count_value > 35 && V_count_value <= 514) ? 8'hFF:8'h00;
 //assign Blue  = (H_count_value > 144 && H_count_value < 783 && V_count_value > 35 && V_count_value <= 514) ? 8'hFF:8'h00;
-always @(posedge clk)
+always_ff @(posedge clk)
 	begin
-		//Cuadrado 1
-		if(H_count_value > 144 && H_count_value < 304 && V_count_value > 35 && V_count_value < 155)
+		//Columna 1
+		if(H_count_value > 144 && H_count_value < 304)
 			begin
-				r_red   = 8'hFF;
-				r_green = 8'hFF;
-				r_blue  = 8'hFF;
+				//Fila 1
+				if(V_count_value > 35 && V_count_value < 155)
+				begin
+					r_red   = 8'd00;
+					r_green = 8'd187;
+					r_blue  = 8'd45;
+				end
+				//Fila 2
+				else if(V_count_value > 215 && V_count_value < 335)
+				begin
+					r_red   = 8'd200;
+					r_green = 8'd162;
+					r_blue  = 8'd200;
+				end
+				//Fila 3
+				else if(V_count_value > 395 && V_count_value < 515)
+				begin
+					r_red   = ff;
+					r_green = ff;
+					r_blue  = ff;
+				end
+				//lineas que separan
+				else
+				begin
+					r_red   = 8'h00;
+					r_green = 8'h00;
+					r_blue  = 8'h00;
+				end
 			end
-		//Cuadrado 2
-		if(H_count_value > 384 && H_count_value < 544 && V_count_value > 35 && V_count_value < 155)
+		//Columna 2
+		else if(H_count_value > 384 && H_count_value < 544)
 			begin
-				r_red   = 8'h10;
-				r_green = 8'hAA;
-				r_blue  = 8'hFF;
+				//Fila 1
+				if(V_count_value > 35 && V_count_value < 155)
+					begin
+						r_red   = ff;
+						r_green = ff;
+						r_blue  = ff;
+					end
+				//Fila 2
+				else if(V_count_value > 215 && V_count_value < 335)
+					begin
+						r_red   = 8'd00;
+						r_green = 8'd00;
+						r_blue  = ff;
+					end
+				//Fila 3
+				else if(V_count_value > 395 && V_count_value < 515)
+					begin
+						r_red   = ff;
+						r_green = ff;
+						r_blue  = ff;
+					end
+				//lineas que separan
+				else
+					begin
+						r_red   = 8'h00;
+						r_green = 8'h00;
+						r_blue  = 8'h00;
+					end
 			end
-		//Cuadrado 3
-		if(H_count_value > 624 && H_count_value < 784 && V_count_value > 35 && V_count_value < 155)
+		//Columna 3
+		else if(H_count_value > 624 && H_count_value < 784)
 			begin
-				r_red   = 8'h10;
-				r_green = 8'hFF;
-				r_blue  = 8'hFF;
+				//Fila 1
+				if(V_count_value > 35 && V_count_value < 155)
+					begin
+						r_red   = ff;
+						r_green = ff;
+						r_blue  = ff;
+					end
+				//Fila 2
+				else if(V_count_value > 215 && V_count_value < 335)
+					begin
+						r_red   = ff;
+						r_green = ff;
+						r_blue  = ff;
+					end
+				//Fila 3
+				else if(V_count_value > 395 && V_count_value < 515)
+					begin
+						r_red   = ff;
+						r_green = ff;
+						r_blue  = ff;
+					end
+				else
+					begin
+						r_red   = 8'h00;
+						r_green = 8'h00;
+						r_blue  = 8'h00;
+					end
 			end
-		//Cuadrado 4
-		if(H_count_value > 144 && H_count_value < 304 && V_count_value > 215 && V_count_value < 335)
-			begin
-				r_red   = 8'h20;
-				r_green = 8'h50;
-				r_blue  = 8'hAF;
-			end	
-		//Cuadrado 5
-		if(H_count_value > 384 && H_count_value < 544 && V_count_value > 215 && V_count_value < 335)
-			begin
-				r_red   = 8'hAA;
-				r_green = 8'h00;
-				r_blue  = 8'hFF;
-			end
-		//Cuadrado 6
-		if(H_count_value > 624 && H_count_value < 784 && V_count_value > 215 && V_count_value < 335)
-			begin
-				r_red   = 8'h00;
-				r_green = 8'hFF;
-				r_blue  = 8'hFF;
-			end
-		//Cuadrado 7
-		if(H_count_value > 144 && H_count_value < 304 && V_count_value > 395 && V_count_value < 515)
-			begin
-				r_red   = 8'h10;
-				r_green = 8'hFA;
-				r_blue  = 8'h6F;
-			end
-		//Cuadrado 8
-		if(H_count_value > 384 && H_count_value < 544 && V_count_value > 395 && V_count_value < 515)
-			begin
-				r_red   = 8'h60;
-				r_green = 8'h55;
-				r_blue  = 8'hAF;
-			end	
-		//Cuadrado 9
-		if(H_count_value > 624 && H_count_value < 784 && V_count_value > 395 && V_count_value < 515)
-			begin
-				r_red   = 8'hA0;
-				r_green = 8'h53;
-				r_blue  = 8'h4F;
-			end	
 		else
 			begin
-				r_red   = 8'hFF;
-				r_green = 8'hFF;
-				r_blue  = 8'hFF;
+				r_red   = 8'h00;
+				r_green = 8'h00;
+				r_blue  = 8'h00;
 			end
 	end
-	assign Red = (H_count_value > 144 && H_count_value <= 783 && V_count_value > 35 && V_count_value <= 514) ? r_red : 8'hFF;
-	assign Blue = (H_count_value > 144 && H_count_value <= 783 && V_count_value > 35 && V_count_value <= 514) ? r_blue : 8'hFF;
-	assign Green = (H_count_value > 144 && H_count_value <= 783 && V_count_value > 35 && V_count_value <= 514) ? r_green : 8'hFF;
+	assign Red = r_red;
+	assign Blue =  r_blue;
+	assign Green = r_green;
 
 endmodule 

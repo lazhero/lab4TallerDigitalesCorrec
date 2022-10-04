@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TICTACTOE
-Sun Oct 02 14:21:54 2022
+Mon Oct 03 21:57:46 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,8 +13,8 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |VGA_Controller
  10. Parameter Settings for User Entity Instance: clock_divider:clk_divider
  11. Post-Synthesis Netlist Statistics for Top Partition
  12. Elapsed Time Per Partition
@@ -45,13 +45,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Oct 02 14:21:54 2022       ;
+; Analysis & Synthesis Status     ; Successful - Mon Oct 03 21:57:46 2022       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; TICTACTOE                                   ;
 ; Top-level Entity Name           ; VGA_Controller                              ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 63                                          ;
+; Total registers                 ; 86                                          ;
 ; Total pins                      ; 29                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -165,7 +165,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-12        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -179,31 +180,31 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                       ;
-+---------------------------------------------+-------------------------------------+
-; Resource                                    ; Usage                               ;
-+---------------------------------------------+-------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 52                                  ;
-;                                             ;                                     ;
-; Combinational ALUT usage for logic          ; 88                                  ;
-;     -- 7 input functions                    ; 0                                   ;
-;     -- 6 input functions                    ; 16                                  ;
-;     -- 5 input functions                    ; 6                                   ;
-;     -- 4 input functions                    ; 4                                   ;
-;     -- <=3 input functions                  ; 62                                  ;
-;                                             ;                                     ;
-; Dedicated logic registers                   ; 63                                  ;
-;                                             ;                                     ;
-; I/O pins                                    ; 29                                  ;
-;                                             ;                                     ;
-; Total DSP Blocks                            ; 0                                   ;
-;                                             ;                                     ;
-; Maximum fan-out node                        ; clock_divider:clk_divider|clock_out ;
-; Maximum fan-out                             ; 34                                  ;
-; Total fan-out                               ; 542                                 ;
-; Average fan-out                             ; 2.59                                ;
-+---------------------------------------------+-------------------------------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 65        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 107       ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 20        ;
+;     -- 5 input functions                    ; 11        ;
+;     -- 4 input functions                    ; 10        ;
+;     -- <=3 input functions                  ; 66        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 86        ;
+;                                             ;           ;
+; I/O pins                                    ; 29        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 53        ;
+; Total fan-out                               ; 684       ;
+; Average fan-out                             ; 2.73      ;
++---------------------------------------------+-----------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,25 +212,10 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+----------------+--------------+
 ; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name    ; Library Name ;
 +--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+----------------+--------------+
-; |VGA_Controller                ; 88 (53)             ; 63 (34)                   ; 0                 ; 0          ; 29   ; 0            ; |VGA_Controller                           ; VGA_Controller ; work         ;
+; |VGA_Controller                ; 107 (72)            ; 86 (57)                   ; 0                 ; 0          ; 29   ; 0            ; |VGA_Controller                           ; VGA_Controller ; work         ;
 ;    |clock_divider:clk_divider| ; 35 (35)             ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |VGA_Controller|clock_divider:clk_divider ; clock_divider  ; work         ;
 +--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; r_red[5,7]                             ; Stuck at VCC due to stuck port data_in ;
-; r_green[0,1,4,6]                       ; Stuck at VCC due to stuck port data_in ;
-; r_blue[0..3,6]                         ; Stuck at VCC due to stuck port data_in ;
-; r_blue[5,7]                            ; Merged with r_blue[4]                  ;
-; r_green[2,3,5,7]                       ; Merged with r_blue[4]                  ;
-; r_red[0..4,6]                          ; Merged with r_blue[4]                  ;
-; Total Number of Removed Registers = 23 ;                                        ;
-+----------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -237,7 +223,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 63    ;
+; Total registers                              ; 86    ;
 ; Number of registers using Synchronous Clear  ; 60    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 32    ;
@@ -245,6 +231,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Clock Enable       ; 17    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |VGA_Controller ;
++----------------+----------+----------------------------------------------------+
+; Parameter Name ; Value    ; Type                                               ;
++----------------+----------+----------------------------------------------------+
+; ff             ; 11111111 ; Unsigned Binary                                    ;
+; bei            ; 10000000 ; Unsigned Binary                                    ;
+; ge             ; 00100011 ; Unsigned Binary                                    ;
++----------------+----------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +------------------------------------------------------------------------+
@@ -262,26 +260,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 63                          ;
+; arriav_ff             ; 86                          ;
 ;     CLR SCLR          ; 16                          ;
 ;     ENA               ; 1                           ;
 ;     ENA CLR SCLR      ; 16                          ;
 ;     SCLR              ; 28                          ;
-;     plain             ; 2                           ;
-; arriav_lcell_comb     ; 90                          ;
+;     plain             ; 25                          ;
+; arriav_lcell_comb     ; 108                         ;
 ;     arith             ; 60                          ;
 ;         1 data inputs ; 60                          ;
-;     normal            ; 30                          ;
-;         0 data inputs ; 1                           ;
+;     normal            ; 48                          ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 1                           ;
-;         4 data inputs ; 4                           ;
-;         5 data inputs ; 6                           ;
-;         6 data inputs ; 16                          ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 10                          ;
+;         5 data inputs ; 11                          ;
+;         6 data inputs ; 20                          ;
 ; boundary_port         ; 29                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.70                        ;
-; Average LUT depth     ; 2.61                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.68                        ;
 +-----------------------+-----------------------------+
 
 
@@ -300,7 +298,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Oct 02 14:21:48 2022
+    Info: Processing started: Mon Oct 03 21:57:40 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TICTACTOE -c TICTACTOE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -345,34 +343,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file checkem
 Info (12021): Found 1 design units, including 1 entities, in source file muxcustom.sv
     Info (12023): Found entity 1: muxCustom File: D:/Git/lab4TallerDigitalesCorrec/muxCustom.sv Line: 1
 Info (12127): Elaborating entity "VGA_Controller" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(39): truncated value with size 32 to match size of target (16) File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 39
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(55): truncated value with size 32 to match size of target (16) File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 55
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(66): truncated value with size 32 to match size of target (1) File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 66
-Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(67): truncated value with size 32 to match size of target (1) File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 67
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(42): truncated value with size 32 to match size of target (16) File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 42
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(58): truncated value with size 32 to match size of target (16) File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 58
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(69): truncated value with size 32 to match size of target (1) File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 69
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(70): truncated value with size 32 to match size of target (1) File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 70
 Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:clk_divider" File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 14
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "Red[5]" is stuck at VCC File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 7
-    Warning (13410): Pin "Red[7]" is stuck at VCC File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 7
-    Warning (13410): Pin "Green[0]" is stuck at VCC File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 8
-    Warning (13410): Pin "Green[1]" is stuck at VCC File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 8
-    Warning (13410): Pin "Green[4]" is stuck at VCC File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 8
-    Warning (13410): Pin "Green[6]" is stuck at VCC File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 8
-    Warning (13410): Pin "Blue[0]" is stuck at VCC File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 9
-    Warning (13410): Pin "Blue[1]" is stuck at VCC File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 9
-    Warning (13410): Pin "Blue[2]" is stuck at VCC File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 9
-    Warning (13410): Pin "Blue[3]" is stuck at VCC File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 9
-    Warning (13410): Pin "Blue[6]" is stuck at VCC File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 9
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 118 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 160 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 27 output pins
-    Info (21061): Implemented 89 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 4883 megabytes
-    Info: Processing ended: Sun Oct 02 14:21:54 2022
+    Info (21061): Implemented 131 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4882 megabytes
+    Info: Processing ended: Mon Oct 03 21:57:46 2022
     Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Total CPU time (on all processors): 00:00:15
 
 
