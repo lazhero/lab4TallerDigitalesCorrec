@@ -1,11 +1,9 @@
 module test_vga_Controller();
-	 logic clk, rst, clk_25MHz;
+	 logic clk, rst, VGA_clk;
 	 logic Hsync, Vsync;
 	 logic[7:0] Red, Green, Blue;
 	 
-	 
-	 clock_divider my_clock(clk, rst, clk_25MHz);
-	 VGA_Controller My_VGA_Controller(clk_25MHz, rst, Hsync, Vsync, Red, Green, Blue);
+	 VGA_Controller My_VGA_Controller(clk, rst, Hsync, Vsync, Red, Green, Blue, VGA_clk);
 	 
 	 initial begin
 		clk = 0;#1;

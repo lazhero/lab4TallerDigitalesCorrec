@@ -8,33 +8,44 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/simulation/modelsim
-vcheckEmpty
+Z0 dD:/Git/lab4TallerDigitalesCorrec/simulation/modelsim
+vclock_divider
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+<<<<<<< HEAD
 Z2 !s110 1664897447
+=======
+Z2 !s110 1664740989
+>>>>>>> master
 !i10b 1
-!s100 M_]7_ETJ:U[an2z4NQ[FS2
+!s100 6876=`6aHj=O[Pjjg95S71
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Ie2OSPAJBa1S6BbU0D[^JG3
+IQ;aUabV08BN1j4iOn:;Gk2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1664668163
-8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv
-FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv
-!i122 7
-L0 1 22
+w1664740619
+8D:/Git/lab4TallerDigitalesCorrec/clock_divider.sv
+FD:/Git/lab4TallerDigitalesCorrec/clock_divider.sv
+!i122 1
+L0 4 18
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
+<<<<<<< HEAD
 Z6 !s108 1664897447.000000
 !s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv|
+=======
+Z6 !s108 1664740989.000000
+!s107 D:/Git/lab4TallerDigitalesCorrec/clock_divider.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/lab4TallerDigitalesCorrec|D:/Git/lab4TallerDigitalesCorrec/clock_divider.sv|
+>>>>>>> master
 !i113 1
 Z7 o-sv -work work
-Z8 !s92 -sv -work work {+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing}
+Z8 !s92 -sv -work work +incdir+D:/Git/lab4TallerDigitalesCorrec
 Z9 tCvgOpt 0
+<<<<<<< HEAD
 ncheck@empty
 vcronometer
 R1
@@ -117,96 +128,52 @@ R8
 R9
 nplayer@iterator
 vplayGrill
+=======
+vtest_vga_Controller
+>>>>>>> master
 R1
 R2
 !i10b 1
-!s100 K?z[<L0b8eR2:kHN3>GC33
+!s100 FK[XdTz^U>D4jcJP`V19O1
 R3
-IMY?^_zP3fema;6Q7gD<TG2
+Ign3D9lQe]A=C?ae3X6`Hf0
 R4
 S1
 R0
-w1663387327
-8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv
-FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv
-!i122 4
-L0 1 13
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv|
-!i113 1
-R7
-R8
-R9
-nplay@grill
-vpositionMachine
-R1
-R2
-!i10b 1
-!s100 lO7EKbK>cFa<>9hgHQjQ40
-R3
-IoCGLU?^a?h5jLEO?G5=UQ2
-R4
-S1
-R0
-w1663862879
-8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv
-FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv
-!i122 3
-L0 1 31
-R5
-r1
-!s85 0
-31
-R6
-!s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv|
-!i113 1
-R7
-R8
-R9
-nposition@machine
-vrandomModule
-R1
-R2
-!i10b 1
-!s100 ;O0`dd1IVAZ=UDMHZ1K[52
-R3
-I3XTQmD0X29[WRiVTDj^GF1
-R4
-S1
-R0
-w1664674580
-8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv
-FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv
+w1664740915
+8D:/Git/lab4TallerDigitalesCorrec/test_vga_Controller.sv
+FD:/Git/lab4TallerDigitalesCorrec/test_vga_Controller.sv
 !i122 2
-L0 1 21
+L0 1 17
 R5
 r1
 !s85 0
 31
+<<<<<<< HEAD
 Z12 !s108 1664897446.000000
 !s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv|
+=======
+R6
+!s107 D:/Git/lab4TallerDigitalesCorrec/test_vga_Controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/lab4TallerDigitalesCorrec|D:/Git/lab4TallerDigitalesCorrec/test_vga_Controller.sv|
+>>>>>>> master
 !i113 1
 R7
 R8
 R9
-nrandom@module
-vsquareBox
+ntest_vga_@controller
+vVGA_Controller
 R1
 Z13 !s110 1664897446
 !i10b 1
-!s100 mmHcgMOAdKzc87SP<LA8<2
+!s100 HXW5K[f3<5i7H6ikM6>k=1
 R3
-Il4RbELW]dSheS=6E;8Qg@0
+IXV6Kn7Q83o`2zij@0FNYM3
 R4
 S1
 R0
+<<<<<<< HEAD
 w1663426615
 8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv
 FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv
@@ -266,17 +233,31 @@ w1664897384
 FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv
 !i122 10
 L0 2 108
+=======
+w1664740877
+8D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv
+FD:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv
+!i122 0
+L0 1 142
+>>>>>>> master
 R5
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R11
 !s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv|
+=======
+R6
+!s107 D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Git/lab4TallerDigitalesCorrec|D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv|
+>>>>>>> master
 !i113 1
 R7
 R8
 R9
+<<<<<<< HEAD
 n@tic@tac@toe@test
 vvictoryCondition
 R1
@@ -305,3 +286,6 @@ R7
 R8
 R9
 nvictory@condition
+=======
+n@v@g@a_@controller
+>>>>>>> master

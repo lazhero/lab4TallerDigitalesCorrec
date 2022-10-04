@@ -4,91 +4,67 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "a[0]",
+					"name" : "Hsync",
 					"strict" : false
 				},
 				{
-					"name" : "a[1]",
+					"name" : "Vsync",
 					"strict" : false
 				},
 				{
-					"name" : "b[0]",
+					"name" : "Red[0]",
 					"strict" : false
 				},
 				{
-					"name" : "b[1]",
+					"name" : "Red[1]",
 					"strict" : false
 				},
 				{
-					"name" : "c[0]",
+					"name" : "Red[2]",
 					"strict" : false
 				},
 				{
-					"name" : "c[1]",
+					"name" : "Red[3]",
 					"strict" : false
 				},
 				{
-					"name" : "d[0]",
+					"name" : "Red[4]",
 					"strict" : false
 				},
 				{
-					"name" : "d[1]",
+					"name" : "Red[6]",
 					"strict" : false
 				},
 				{
-					"name" : "e[0]",
+					"name" : "Green[2]",
 					"strict" : false
 				},
 				{
-					"name" : "e[1]",
+					"name" : "Green[3]",
 					"strict" : false
 				},
 				{
-					"name" : "f[0]",
+					"name" : "Green[5]",
 					"strict" : false
 				},
 				{
-					"name" : "f[1]",
+					"name" : "Green[7]",
 					"strict" : false
 				},
 				{
-					"name" : "g[0]",
+					"name" : "Blue[4]",
 					"strict" : false
 				},
 				{
-					"name" : "g[1]",
+					"name" : "Blue[5]",
 					"strict" : false
 				},
 				{
-					"name" : "h[0]",
+					"name" : "Blue[7]",
 					"strict" : false
 				},
 				{
-					"name" : "h[1]",
-					"strict" : false
-				},
-				{
-					"name" : "i[0]",
-					"strict" : false
-				},
-				{
-					"name" : "i[1]",
-					"strict" : false
-				},
-				{
-					"name" : "winner[0]",
-					"strict" : false
-				},
-				{
-					"name" : "winner[1]",
-					"strict" : false
-				},
-				{
-					"name" : "sel",
-					"strict" : false
-				},
-				{
-					"name" : "clk",
+					"name" : "VGA_clk",
 					"strict" : false
 				},
 				{
@@ -96,11 +72,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "Fclk",
-					"strict" : false
-				},
-				{
-					"name" : "next",
+					"name" : "clk",
 					"strict" : false
 				}
 			]
