@@ -22,6 +22,8 @@ h[0] << h[0].DB_MAX_OUTPUT_PORT_TYPE
 h[1] << h[1].DB_MAX_OUTPUT_PORT_TYPE
 i[0] << i[0].DB_MAX_OUTPUT_PORT_TYPE
 i[1] << i[1].DB_MAX_OUTPUT_PORT_TYPE
+winner[0] << victoryCondition:victoryModule.victory
+winner[1] << victoryCondition:victoryModule.victory
 
 
 |TicTacToe|positionMachine:myPositionMachine
@@ -389,5 +391,46 @@ pos[1] => Mux0.IN18
 pos[2] => Mux0.IN17
 pos[3] => Mux0.IN16
 flag <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|TicTacToe|victoryCondition:victoryModule
+a[0] => Equal4.IN0
+a[0] => Equal13.IN1
+a[1] => Equal4.IN1
+a[1] => Equal13.IN0
+b[0] => Equal1.IN0
+b[0] => Equal10.IN1
+b[1] => Equal1.IN1
+b[1] => Equal10.IN0
+c[0] => Equal6.IN0
+c[0] => Equal15.IN1
+c[1] => Equal6.IN1
+c[1] => Equal15.IN0
+d[0] => Equal0.IN0
+d[0] => Equal9.IN1
+d[1] => Equal0.IN1
+d[1] => Equal9.IN0
+e[0] => Equal7.IN0
+e[0] => Equal16.IN1
+e[1] => Equal7.IN1
+e[1] => Equal16.IN0
+f[0] => Equal3.IN0
+f[0] => Equal12.IN1
+f[1] => Equal3.IN1
+f[1] => Equal12.IN0
+g[0] => Equal8.IN0
+g[0] => Equal17.IN1
+g[1] => Equal8.IN1
+g[1] => Equal17.IN0
+h[0] => Equal2.IN0
+h[0] => Equal11.IN1
+h[1] => Equal2.IN1
+h[1] => Equal11.IN0
+i[0] => Equal5.IN0
+i[0] => Equal14.IN1
+i[1] => Equal5.IN1
+i[1] => Equal14.IN0
+victory[0] <= v1.DB_MAX_OUTPUT_PORT_TYPE
+victory[1] <= victory.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -11,7 +11,7 @@ cModel Technology
 Z0 dC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/simulation/modelsim
 vcheckEmpty
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1664674717
+Z2 !s110 1664897447
 !i10b 1
 !s100 M_]7_ETJ:U[an2z4NQ[FS2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,7 +28,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1664674717.000000
+Z6 !s108 1664897447.000000
 !s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv|
 !i113 1
@@ -46,7 +46,7 @@ Ig<bmk]C2^IShbLN1H?DPJ1
 R4
 S1
 R0
-w1664673348
+w1664897106
 8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv
 FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv
 !i122 6
@@ -64,7 +64,7 @@ R8
 R9
 vmuxCustom
 R1
-R2
+Z10 !s110 1664897448
 !i10b 1
 !s100 6HfYA6gIM==@FE^<YG0cU2
 R3
@@ -81,7 +81,7 @@ R5
 r1
 !s85 0
 31
-R6
+Z11 !s108 1664897448.000000
 !s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv|
 !i113 1
@@ -189,7 +189,7 @@ R5
 r1
 !s85 0
 31
-R6
+Z12 !s108 1664897446.000000
 !s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv|
 !i113 1
@@ -199,7 +199,7 @@ R9
 nrandom@module
 vsquareBox
 R1
-R2
+Z13 !s110 1664897446
 !i10b 1
 !s100 mmHcgMOAdKzc87SP<LA8<2
 R3
@@ -216,7 +216,7 @@ R5
 r1
 !s85 0
 31
-Z10 !s108 1664674716.000000
+R12
 !s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv|
 !i113 1
@@ -226,24 +226,24 @@ R9
 nsquare@box
 vTicTacToe
 R1
-!s110 1664674716
+R13
 !i10b 1
-!s100 K^H7HH9NHi]D59TMUe7Re1
+!s100 e_QBI[Mc6^7Ac?^k]7U`?1
 R3
-In5GAM;aT;Q`c18kJNBgej1
+Ihb4=kXfDO<_6W8eMQJ<4c2
 R4
 S1
 R0
-w1664670441
+w1664897352
 8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv
 FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv
 !i122 0
-L0 2 25
+L0 2 33
 R5
 r1
 !s85 0
 31
-R10
+R12
 !s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv|
 !i113 1
@@ -253,24 +253,24 @@ R9
 n@tic@tac@toe
 vTicTacToeTest
 R1
-R2
+R10
 !i10b 1
-!s100 :VQB`ITMDo4SI]2n9lET01
+!s100 4Y;403V>cfS;AZIW5W?0?3
 R3
-IdT]OSF>4X>Xh6;VBUiPT@0
+Ihk@MljEQfJHXfPzF[F^YL3
 R4
 S1
 R0
-w1664673594
+w1664897384
 8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv
 FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv
-!i122 9
-L0 2 107
+!i122 10
+L0 2 108
 R5
 r1
 !s85 0
 31
-R6
+R11
 !s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv|
 !i113 1
@@ -278,3 +278,30 @@ R7
 R8
 R9
 n@tic@tac@toe@test
+vvictoryCondition
+R1
+R10
+!i10b 1
+!s100 ObO13H8l[RlK:U>on16E90
+R3
+IQE4z[hL=[Th?Yc<YP2cE^1
+R4
+S1
+R0
+w1664897245
+8C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/victoryCondition.sv
+FC:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/victoryCondition.sv
+!i122 9
+L0 1 24
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/victoryCondition.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing|C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/victoryCondition.sv|
+!i113 1
+R7
+R8
+R9
+nvictory@condition

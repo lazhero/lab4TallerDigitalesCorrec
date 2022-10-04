@@ -1,5 +1,5 @@
 Analysis & Synthesis report for TICTACTOE
-Sat Oct 01 19:36:36 2022
+Tue Oct 04 09:30:24 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -64,14 +64,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Oct 01 19:36:36 2022       ;
+; Analysis & Synthesis Status     ; Successful - Tue Oct 04 09:30:24 2022       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; TICTACTOE                                   ;
 ; Top-level Entity Name           ; TicTacToe                                   ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 71                                          ;
-; Total pins                      ; 23                                          ;
+; Total pins                      ; 25                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -188,21 +188,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                             ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
-; TicTacToe.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv       ;         ;
-; squareBox.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv       ;         ;
-; randomModule.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv    ;         ;
-; positionMachine.sv               ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv ;         ;
-; playGrill.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv       ;         ;
-; playerIterator.sv                ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playerIterator.sv  ;         ;
-; cronometer.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv      ;         ;
-; checkEmpty.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv      ;         ;
-; muxCustom.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv       ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                              ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
+; TicTacToe.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv        ;         ;
+; squareBox.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv        ;         ;
+; randomModule.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv     ;         ;
+; positionMachine.sv               ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv  ;         ;
+; playGrill.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv        ;         ;
+; playerIterator.sv                ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playerIterator.sv   ;         ;
+; cronometer.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv       ;         ;
+; checkEmpty.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv       ;         ;
+; muxCustom.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv        ;         ;
+; victoryCondition.sv              ; yes             ; User SystemVerilog HDL File  ; C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/victoryCondition.sv ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -210,52 +211,53 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 109       ;
+; Estimate of Logic utilization (ALMs needed) ; 140       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 152       ;
-;     -- 7 input functions                    ; 3         ;
-;     -- 6 input functions                    ; 62        ;
-;     -- 5 input functions                    ; 32        ;
-;     -- 4 input functions                    ; 18        ;
-;     -- <=3 input functions                  ; 37        ;
+; Combinational ALUT usage for logic          ; 191       ;
+;     -- 7 input functions                    ; 4         ;
+;     -- 6 input functions                    ; 84        ;
+;     -- 5 input functions                    ; 41        ;
+;     -- 4 input functions                    ; 15        ;
+;     -- <=3 input functions                  ; 47        ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 71        ;
 ;                                             ;           ;
-; I/O pins                                    ; 23        ;
+; I/O pins                                    ; 25        ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; rst~input ;
 ; Maximum fan-out                             ; 71        ;
-; Total fan-out                               ; 992       ;
-; Average fan-out                             ; 3.69      ;
+; Total fan-out                               ; 1193      ;
+; Average fan-out                             ; 3.82      ;
 +---------------------------------------------+-----------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                             ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name     ; Library Name ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-----------------+--------------+
-; |TicTacToe                             ; 152 (44)            ; 71 (0)                    ; 0                 ; 0          ; 23   ; 0            ; |TicTacToe                                   ; TicTacToe       ; work         ;
-;    |checkEmpty:myCheckPosRandom|       ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|checkEmpty:myCheckPosRandom       ; checkEmpty      ; work         ;
-;    |checkEmpty:myCheckPos|             ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|checkEmpty:myCheckPos             ; checkEmpty      ; work         ;
-;    |cronometer:mycronometer|           ; 37 (37)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|cronometer:mycronometer           ; cronometer      ; work         ;
-;    |muxCustom:themux|                  ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|muxCustom:themux                  ; muxCustom       ; work         ;
-;    |playGrill:grill|                   ; 41 (0)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill                   ; playGrill       ; work         ;
-;       |squareBox:c0|                   ; 5 (5)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c0      ; squareBox       ; work         ;
-;       |squareBox:c1|                   ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c1      ; squareBox       ; work         ;
-;       |squareBox:c2|                   ; 4 (4)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c2      ; squareBox       ; work         ;
-;       |squareBox:c3|                   ; 5 (5)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c3      ; squareBox       ; work         ;
-;       |squareBox:c4|                   ; 5 (5)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c4      ; squareBox       ; work         ;
-;       |squareBox:c5|                   ; 4 (4)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c5      ; squareBox       ; work         ;
-;       |squareBox:c6|                   ; 4 (4)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c6      ; squareBox       ; work         ;
-;       |squareBox:c7|                   ; 5 (5)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c7      ; squareBox       ; work         ;
-;       |squareBox:c8|                   ; 6 (6)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c8      ; squareBox       ; work         ;
-;    |playerIterator:myiterator|         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playerIterator:myiterator         ; playerIterator  ; work         ;
-;    |positionMachine:myPositionMachine| ; 5 (5)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|positionMachine:myPositionMachine ; positionMachine ; work         ;
-;    |randomModule:myrandom|             ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|randomModule:myrandom             ; randomModule    ; work         ;
-+----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+-----------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                              ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name      ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+------------------+--------------+
+; |TicTacToe                             ; 191 (53)            ; 71 (0)                    ; 0                 ; 0          ; 25   ; 0            ; |TicTacToe                                   ; TicTacToe        ; work         ;
+;    |checkEmpty:myCheckPosRandom|       ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|checkEmpty:myCheckPosRandom       ; checkEmpty       ; work         ;
+;    |checkEmpty:myCheckPos|             ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|checkEmpty:myCheckPos             ; checkEmpty       ; work         ;
+;    |cronometer:mycronometer|           ; 37 (37)             ; 30 (30)                   ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|cronometer:mycronometer           ; cronometer       ; work         ;
+;    |muxCustom:themux|                  ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|muxCustom:themux                  ; muxCustom        ; work         ;
+;    |playGrill:grill|                   ; 61 (0)              ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill                   ; playGrill        ; work         ;
+;       |squareBox:c0|                   ; 3 (3)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c0      ; squareBox        ; work         ;
+;       |squareBox:c1|                   ; 4 (4)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c1      ; squareBox        ; work         ;
+;       |squareBox:c2|                   ; 10 (10)             ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c2      ; squareBox        ; work         ;
+;       |squareBox:c3|                   ; 5 (5)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c3      ; squareBox        ; work         ;
+;       |squareBox:c4|                   ; 8 (8)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c4      ; squareBox        ; work         ;
+;       |squareBox:c5|                   ; 7 (7)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c5      ; squareBox        ; work         ;
+;       |squareBox:c6|                   ; 5 (5)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c6      ; squareBox        ; work         ;
+;       |squareBox:c7|                   ; 10 (10)             ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c7      ; squareBox        ; work         ;
+;       |squareBox:c8|                   ; 9 (9)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playGrill:grill|squareBox:c8      ; squareBox        ; work         ;
+;    |playerIterator:myiterator|         ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|playerIterator:myiterator         ; playerIterator   ; work         ;
+;    |positionMachine:myPositionMachine| ; 5 (5)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|positionMachine:myPositionMachine ; positionMachine  ; work         ;
+;    |randomModule:myrandom|             ; 4 (4)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|randomModule:myrandom             ; randomModule     ; work         ;
+;    |victoryCondition:victoryModule|    ; 10 (10)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |TicTacToe|victoryCondition:victoryModule    ; victoryCondition ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -417,7 +419,7 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |TicTacToe|cronometer:mycronometer|count[29] ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |TicTacToe|cronometer:mycronometer|count[15] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 
 
@@ -520,22 +522,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR               ; 32                          ;
 ;     CLR SCLR          ; 30                          ;
 ;     ENA CLR           ; 9                           ;
-; arriav_lcell_comb     ; 152                         ;
+; arriav_lcell_comb     ; 191                         ;
 ;     arith             ; 30                          ;
 ;         1 data inputs ; 30                          ;
-;     extend            ; 3                           ;
-;         7 data inputs ; 3                           ;
-;     normal            ; 119                         ;
+;     extend            ; 4                           ;
+;         7 data inputs ; 4                           ;
+;     normal            ; 157                         ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 18                          ;
-;         5 data inputs ; 32                          ;
-;         6 data inputs ; 62                          ;
-; boundary_port         ; 23                          ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 15                          ;
+;         5 data inputs ; 41                          ;
+;         6 data inputs ; 84                          ;
+; boundary_port         ; 25                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.71                        ;
+; Average LUT depth     ; 4.07                        ;
 +-----------------------+-----------------------------+
 
 
@@ -554,7 +556,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 01 19:36:24 2022
+    Info: Processing started: Tue Oct 04 09:30:13 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TICTACTOE -c TICTACTOE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -598,12 +600,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file checkem
     Info (12023): Found entity 1: checkEmpty File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file muxcustom.sv
     Info (12023): Found entity 1: muxCustom File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file victorycondition.sv
+    Info (12023): Found entity 1: victoryCondition File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/victoryCondition.sv Line: 1
 Info (12127): Elaborating entity "TicTacToe" for the top level hierarchy
-Info (12128): Elaborating entity "positionMachine" for hierarchy "positionMachine:myPositionMachine" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 9
-Info (12128): Elaborating entity "randomModule" for hierarchy "randomModule:myrandom" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 11
+Info (12128): Elaborating entity "positionMachine" for hierarchy "positionMachine:myPositionMachine" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 15
+Info (12128): Elaborating entity "randomModule" for hierarchy "randomModule:myrandom" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 17
 Warning (10230): Verilog HDL assignment warning at randomModule.sv(13): truncated value with size 32 to match size of target (4) File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv Line: 13
-Info (12128): Elaborating entity "muxCustom" for hierarchy "muxCustom:themux" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 12
-Info (12128): Elaborating entity "playGrill" for hierarchy "playGrill:grill" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 13
+Info (12128): Elaborating entity "muxCustom" for hierarchy "muxCustom:themux" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 18
+Info (12128): Elaborating entity "playGrill" for hierarchy "playGrill:grill" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 19
 Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c0" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 3
 Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c1" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 4
 Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c2" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 5
@@ -613,22 +617,23 @@ Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squa
 Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c6" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 9
 Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c7" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 10
 Info (12128): Elaborating entity "squareBox" for hierarchy "playGrill:grill|squareBox:c8" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 11
-Info (12128): Elaborating entity "playerIterator" for hierarchy "playerIterator:myiterator" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 14
-Info (12128): Elaborating entity "cronometer" for hierarchy "cronometer:mycronometer" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 16
+Info (12128): Elaborating entity "playerIterator" for hierarchy "playerIterator:myiterator" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 20
+Info (12128): Elaborating entity "cronometer" for hierarchy "cronometer:mycronometer" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 22
 Warning (10230): Verilog HDL assignment warning at cronometer.sv(21): truncated value with size 32 to match size of target (30) File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv Line: 21
-Info (12128): Elaborating entity "checkEmpty" for hierarchy "checkEmpty:myCheckPos" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 18
+Info (12128): Elaborating entity "checkEmpty" for hierarchy "checkEmpty:myCheckPos" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 24
+Info (12128): Elaborating entity "victoryCondition" for hierarchy "victoryCondition:victoryModule" File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 27
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 182 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 223 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 159 logic cells
+    Info (21059): Implemented 20 output pins
+    Info (21061): Implemented 198 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4822 megabytes
-    Info: Processing ended: Sat Oct 01 19:36:36 2022
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Peak virtual memory: 4814 megabytes
+    Info: Processing ended: Tue Oct 04 09:30:24 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:27
 
 

@@ -13,109 +13,119 @@
 # 
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/Taller4Fixing {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:36 on Oct 01,2022
+# Start time: 09:30:46 on Oct 04,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv 
 # -- Compiling module TicTacToe
 # 
 # Top level modules:
 # 	TicTacToe
-# End time: 19:38:36 on Oct 01,2022, Elapsed time: 0:00:00
+# End time: 09:30:46 on Oct 04,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/Taller4Fixing {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:36 on Oct 01,2022
+# Start time: 09:30:46 on Oct 04,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv 
 # -- Compiling module squareBox
 # 
 # Top level modules:
 # 	squareBox
-# End time: 19:38:37 on Oct 01,2022, Elapsed time: 0:00:01
+# End time: 09:30:46 on Oct 04,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/Taller4Fixing {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:37 on Oct 01,2022
+# Start time: 09:30:46 on Oct 04,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv 
 # -- Compiling module randomModule
 # 
 # Top level modules:
 # 	randomModule
-# End time: 19:38:37 on Oct 01,2022, Elapsed time: 0:00:00
+# End time: 09:30:47 on Oct 04,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/Taller4Fixing {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:37 on Oct 01,2022
+# Start time: 09:30:47 on Oct 04,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv 
 # -- Compiling module positionMachine
 # 
 # Top level modules:
 # 	positionMachine
-# End time: 19:38:37 on Oct 01,2022, Elapsed time: 0:00:00
+# End time: 09:30:47 on Oct 04,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/Taller4Fixing {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:37 on Oct 01,2022
+# Start time: 09:30:47 on Oct 04,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv 
 # -- Compiling module playGrill
 # 
 # Top level modules:
 # 	playGrill
-# End time: 19:38:37 on Oct 01,2022, Elapsed time: 0:00:00
+# End time: 09:30:47 on Oct 04,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/Taller4Fixing {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playerIterator.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:37 on Oct 01,2022
+# Start time: 09:30:47 on Oct 04,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playerIterator.sv 
 # -- Compiling module playerIterator
 # 
 # Top level modules:
 # 	playerIterator
-# End time: 19:38:37 on Oct 01,2022, Elapsed time: 0:00:00
+# End time: 09:30:47 on Oct 04,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/Taller4Fixing {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:37 on Oct 01,2022
+# Start time: 09:30:47 on Oct 04,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv 
 # -- Compiling module cronometer
 # 
 # Top level modules:
 # 	cronometer
-# End time: 19:38:37 on Oct 01,2022, Elapsed time: 0:00:00
+# End time: 09:30:47 on Oct 04,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/Taller4Fixing {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:37 on Oct 01,2022
+# Start time: 09:30:47 on Oct 04,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv 
 # -- Compiling module checkEmpty
 # 
 # Top level modules:
 # 	checkEmpty
-# End time: 19:38:37 on Oct 01,2022, Elapsed time: 0:00:00
+# End time: 09:30:47 on Oct 04,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/Taller4Fixing {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:37 on Oct 01,2022
+# Start time: 09:30:48 on Oct 04,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv 
 # -- Compiling module muxCustom
 # 
 # Top level modules:
 # 	muxCustom
-# End time: 19:38:37 on Oct 01,2022, Elapsed time: 0:00:00
+# End time: 09:30:48 on Oct 04,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/Taller4Fixing {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/victoryCondition.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:30:48 on Oct 04,2022
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/victoryCondition.sv 
+# -- Compiling module victoryCondition
+# 
+# Top level modules:
+# 	victoryCondition
+# End time: 09:30:48 on Oct 04,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/TEC/Segundo\ Semestre\ 2022/taller/Lab4TallerDigitales/Taller4Fixing {C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:38:37 on Oct 01,2022
+# Start time: 09:30:48 on Oct 04,2022
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing" C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv 
 # -- Compiling module TicTacToeTest
 # 
 # Top level modules:
 # 	TicTacToeTest
-# End time: 19:38:37 on Oct 01,2022, Elapsed time: 0:00:00
+# End time: 09:30:48 on Oct 04,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  TicTacToeTest
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" TicTacToeTest 
-# Start time: 19:38:37 on Oct 01,2022
+# Start time: 09:30:48 on Oct 04,2022
 # Loading sv_std.std
 # Loading work.TicTacToeTest
 # Loading work.TicTacToe
@@ -127,6 +137,9 @@
 # Loading work.playerIterator
 # Loading work.cronometer
 # Loading work.checkEmpty
+# Loading work.victoryCondition
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'winner'. The port definition is at: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /TicTacToeTest/myToe File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv Line: 6
 # 
 # add wave *
 # view structure
@@ -135,6 +148,6 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Break key hit
-# Break in Module squareBox at C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv line 12
-# End time: 19:39:32 on Oct 01,2022, Elapsed time: 0:00:55
-# Errors: 0, Warnings: 0
+# Simulation stop requested.
+# End time: 09:33:44 on Oct 04,2022, Elapsed time: 0:02:56
+# Errors: 0, Warnings: 1

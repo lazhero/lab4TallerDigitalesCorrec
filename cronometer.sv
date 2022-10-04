@@ -1,8 +1,8 @@
 module cronometer(input clk,rst,manualRst,output timeout);
 
-	localparam [29:0] finishTime= 30'b101100101101000001011110000000; //for use
+	//localparam [29:0] finishTime= 30'b101100101101000001011110000000; //for use
 	 
-	//localparam [29:0] finishTime= 30'b10100;  //for test to avoid waiting to much
+	localparam [29:0] finishTime= 30'b10100;  //for test to avoid waiting to much
 	
 	logic [29:0] count, nextCount;
 	

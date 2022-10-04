@@ -2,7 +2,8 @@
 module TicTacToeTest();
 	logic [1:0] a,b,c,d,e,f,g,h,i;
 	logic sel,next,rst,clk,Fclk;
-	TicTacToe myToe(.sel(sel),.next(next),.rst(rst),.clk(clk),.Fclk(clk),.a(a),.b(b),.c(c),.d(d),.e(e),.f(f),.g(g),.h(h),.i(i));
+	logic winner;
+	TicTacToe myToe(.sel(sel),.next(next),.rst(rst),.clk(clk),.Fclk(clk),.a(a),.b(b),.c(c),.d(d),.e(e),.f(f),.g(g),.h(h),.i(i),.winner(winner));
 	
 	
 	always begin 
