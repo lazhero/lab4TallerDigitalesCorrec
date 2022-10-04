@@ -1,0 +1,11 @@
+module muxVGAOut(input sel, output logic [7:0] r_red,r_green,r_blue);
+
+	always_comb begin
+		case(sel)
+			1'b0:out=a;
+			1'b1:out=b;
+			default:out=a;
+		endcase
+	end
+
+endmodule 

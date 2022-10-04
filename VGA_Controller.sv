@@ -22,58 +22,46 @@ parameter ge = 8'd35;
 reg [15:0] H_count_value = 0; 
 reg [15:0] V_count_value = 0;
 
+logic sq1,sq2,sq3,sq4,sq5,sq6,sq7,sq8,sq9;
 
-Pixel_On_Text2 #(.displayText("X")) t1(
-                CLK_VGA,
-                200, // text position.x (top left)
-                200, // text position.y (top left)
-                VGA_horzCoord, // current position.x
-                VGA_vertCoord, // current position.y
-                res  // result, 1 if current pixel is on text, 0 otherwise
+
+//Text
+Pixel_On_Text2 #(.displayText("que picha")) Square1(
+                clk_25Mhz,
+                385, // text position.x (top left)
+                36, // text position.y (top left)
+                H_count_value, // current position.x
+                V_count_value, // current position.y
+                sq1  // result, 1 if current pixel is on text, 0 otherwise
             );
 
-
-
 always @(posedge clk_25Mhz or posedge rst)
-
 	begin
-	
 		if (rst)
-		
 			begin
 			H_count_value <= 0; 
 			V_count_value <= 0;
 			end
-			
 		else
-			
 			begin
 				if(H_count_value < 799) 
-			
 				begin
-				H_count_value <= H_count_value + 1;
-				enable_v_counter <= 0;
+					H_count_value <= H_count_value + 1;
+					enable_v_counter <= 0;
 				end
-				
 			else
-				
 				begin
-				H_count_value <= 0;
-				enable_v_counter <= 1;
+					H_count_value <= 0;
+					enable_v_counter <= 1;
 				end
-
 			if(enable_v_counter == 1'b1)
-			
 				begin
 				if(V_count_value <= 524)
-				
 					V_count_value <= V_count_value + 1;
 				else 
-				
 					V_count_value <= 0;
 				end
 			end
-
 	end
 
 assign VGA_clk = clk_25Mhz;
@@ -124,9 +112,18 @@ always_ff @(posedge clk)
 				//Fila 1
 				if(V_count_value > 35 && V_count_value < 155)
 					begin
-						r_red   = ff;
-						r_green = ff;
-						r_blue  = ff;
+						if(sq1)
+							begin
+								r_red   = 8'h00;
+								r_green = 8'h00;
+								r_blue  = 8'h00;
+							end
+						else
+							begin
+								r_red   = ff;
+								r_green = ff;
+								r_blue  = ff;
+							end
 					end
 				//Fila 2
 				else if(V_count_value > 215 && V_count_value < 335)
