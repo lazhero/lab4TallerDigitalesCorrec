@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Wed Oct 05 15:37:24 2022
+Analysis & Synthesis Status : Successful - Wed Oct 05 16:18:01 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : TICTACTOE
-Top-level Entity Name : TicTacToe
+Top-level Entity Name : debounce
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 71
-Total pins : 29
+Total registers : 1
+Total pins : 4
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

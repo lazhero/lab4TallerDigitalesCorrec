@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY TicTacToe
+set_global_assignment -name TOP_LEVEL_ENTITY debounce
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:08:52  OCTOBER 01, 2022"
 set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
@@ -116,6 +116,7 @@ set_location_assignment PIN_AF14 -to clk
 set_location_assignment PIN_AE12 -to rst
 set_global_assignment -name EDA_TEST_BENCH_FILE TicTacToeTest.sv -section_id TicTacToeTest
 set_global_assignment -name EDA_TEST_BENCH_FILE test_vga_Controller.sv -section_id test_vga_Controller
+set_global_assignment -name SYSTEMVERILOG_FILE debounce.sv
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
