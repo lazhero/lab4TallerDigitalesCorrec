@@ -147,6 +147,10 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+add wave -position insertpoint  \
+sim:/test_vga_Controller/My_VGA_Controller/H_count_value
+add wave -position insertpoint  \
+sim:/test_vga_Controller/My_VGA_Controller/V_count_value
 # Break key hit
 # Simulation stop requested.
 # End time: 15:39:35 on Oct 05,2022, Elapsed time: 0:01:36
