@@ -18,6 +18,82 @@
 				{
 					"name" : "rst",
 					"strict" : false
+				},
+				{
+					"name" : "stateSq4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq7[1]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq7[0]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq6[1]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq6[0]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq9[1]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq9[0]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq8[1]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq8[0]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "stateSq2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
 				}
 			]
 		}
