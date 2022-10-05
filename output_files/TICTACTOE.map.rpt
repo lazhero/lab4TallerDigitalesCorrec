@@ -1,6 +1,11 @@
 Analysis & Synthesis report for TICTACTOE
+<<<<<<< HEAD
 Wed Oct 05 16:18:01 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+=======
+Wed Oct 05 16:10:18 2022
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+>>>>>>> master
 
 
 ---------------------
@@ -10,6 +15,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
+<<<<<<< HEAD
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
@@ -17,6 +23,9 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   9. Post-Synthesis Netlist Statistics for Top Partition
  10. Elapsed Time Per Partition
  11. Analysis & Synthesis Messages
+=======
+  5. Analysis & Synthesis Messages
+>>>>>>> master
 
 
 
@@ -40,6 +49,7 @@ https://fpgasoftware.intel.com/eula.
 
 
 
+<<<<<<< HEAD
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
@@ -61,6 +71,24 @@ https://fpgasoftware.intel.com/eula.
 ; Total PLLs                      ; 0                                           ;
 ; Total DLLs                      ; 0                                           ;
 +---------------------------------+---------------------------------------------+
+=======
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Wed Oct 05 16:10:18 2022           ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name               ; TICTACTOE                                   ;
+; Top-level Entity Name       ; VGA_Controller                              ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
+>>>>>>> master
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -69,7 +97,11 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+<<<<<<< HEAD
 ; Top-level entity name                                                           ; debounce           ; TICTACTOE          ;
+=======
+; Top-level entity name                                                           ; VGA_Controller     ; TICTACTOE          ;
+>>>>>>> master
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -155,18 +187,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
+<<<<<<< HEAD
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                                          ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------+---------+
@@ -254,57 +286,65 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 
 
+=======
+>>>>>>> master
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
+<<<<<<< HEAD
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
     Info: Processing started: Wed Oct 05 16:17:50 2022
+=======
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Wed Oct 05 16:10:12 2022
+>>>>>>> master
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TICTACTOE -c TICTACTOE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file tictactoetest.sv
-    Info (12023): Found entity 1: TicTacToeTest File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToeTest.sv Line: 2
+    Info (12023): Found entity 1: TicTacToeTest File: D:/Git/lab4TallerDigitalesCorrec/TicTacToeTest.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.sv
-    Info (12023): Found entity 1: VGA_Controller File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/VGA_Controller.sv Line: 1
+    Info (12023): Found entity 1: VGA_Controller File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vertical_counter.sv
-    Info (12023): Found entity 1: vertical_counter File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/vertical_counter.sv Line: 1
+    Info (12023): Found entity 1: vertical_counter File: D:/Git/lab4TallerDigitalesCorrec/vertical_counter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file tictactoe.sv
-    Info (12023): Found entity 1: TicTacToe File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/TicTacToe.sv Line: 2
+    Info (12023): Found entity 1: TicTacToe File: D:/Git/lab4TallerDigitalesCorrec/TicTacToe.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file test_vga_controller.sv
-    Info (12023): Found entity 1: test_vga_Controller File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/test_vga_Controller.sv Line: 1
+    Info (12023): Found entity 1: test_vga_Controller File: D:/Git/lab4TallerDigitalesCorrec/test_vga_Controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file squareboxtest.sv
-    Info (12023): Found entity 1: squareBoxTest File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBoxTest.sv Line: 1
+    Info (12023): Found entity 1: squareBoxTest File: D:/Git/lab4TallerDigitalesCorrec/squareBoxTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file squarebox.sv
-    Info (12023): Found entity 1: squareBox File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/squareBox.sv Line: 1
+    Info (12023): Found entity 1: squareBox File: D:/Git/lab4TallerDigitalesCorrec/squareBox.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file randommodule.sv
-    Info (12023): Found entity 1: randomModule File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/randomModule.sv Line: 1
+    Info (12023): Found entity 1: randomModule File: D:/Git/lab4TallerDigitalesCorrec/randomModule.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file positiontest.sv
-    Info (12023): Found entity 1: positionTest File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionTest.sv Line: 1
+    Info (12023): Found entity 1: positionTest File: D:/Git/lab4TallerDigitalesCorrec/positionTest.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file positionmachine.sv
-    Info (12023): Found entity 1: positionMachine File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/positionMachine.sv Line: 1
+    Info (12023): Found entity 1: positionMachine File: D:/Git/lab4TallerDigitalesCorrec/positionMachine.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file playgrill.sv
-    Info (12023): Found entity 1: playGrill File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playGrill.sv Line: 1
+    Info (12023): Found entity 1: playGrill File: D:/Git/lab4TallerDigitalesCorrec/playGrill.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file playeriterator.sv
-    Info (12023): Found entity 1: playerIterator File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/playerIterator.sv Line: 1
+    Info (12023): Found entity 1: playerIterator File: D:/Git/lab4TallerDigitalesCorrec/playerIterator.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux21.sv
-    Info (12023): Found entity 1: mux21 File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/mux21.sv Line: 1
+    Info (12023): Found entity 1: mux21 File: D:/Git/lab4TallerDigitalesCorrec/mux21.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file maquinacomportamiento.sv
-    Info (12023): Found entity 1: MaquinaComportamiento File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/MaquinaComportamiento.sv Line: 1
+    Info (12023): Found entity 1: MaquinaComportamiento File: D:/Git/lab4TallerDigitalesCorrec/MaquinaComportamiento.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file horizontal_counter.sv
-    Info (12023): Found entity 1: horizontal_counter File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/horizontal_counter.sv Line: 1
+    Info (12023): Found entity 1: horizontal_counter File: D:/Git/lab4TallerDigitalesCorrec/horizontal_counter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file game.sv
-    Info (12023): Found entity 1: game File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/game.sv Line: 1
+    Info (12023): Found entity 1: game File: D:/Git/lab4TallerDigitalesCorrec/game.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cronometer.sv
-    Info (12023): Found entity 1: cronometer File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/cronometer.sv Line: 1
+    Info (12023): Found entity 1: cronometer File: D:/Git/lab4TallerDigitalesCorrec/cronometer.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file clock_divider.sv
-    Info (12023): Found entity 1: clock_divider File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/clock_divider.sv Line: 4
+    Info (12023): Found entity 1: clock_divider File: D:/Git/lab4TallerDigitalesCorrec/clock_divider.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file checkempty.sv
-    Info (12023): Found entity 1: checkEmpty File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/checkEmpty.sv Line: 1
+    Info (12023): Found entity 1: checkEmpty File: D:/Git/lab4TallerDigitalesCorrec/checkEmpty.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file muxcustom.sv
-    Info (12023): Found entity 1: muxCustom File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/muxCustom.sv Line: 1
+    Info (12023): Found entity 1: muxCustom File: D:/Git/lab4TallerDigitalesCorrec/muxCustom.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file victorycondition.sv
+<<<<<<< HEAD
     Info (12023): Found entity 1: victoryCondition File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/victoryCondition.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file debounce.sv
     Info (12023): Found entity 1: debounce File: C:/TEC/Segundo Semestre 2022/taller/Lab4TallerDigitales/Taller4Fixing/debounce.sv Line: 1
@@ -321,5 +361,46 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Processing ended: Wed Oct 05 16:18:01 2022
     Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:26
+=======
+    Info (12023): Found entity 1: victoryCondition File: D:/Git/lab4TallerDigitalesCorrec/victoryCondition.sv Line: 1
+Info (12127): Elaborating entity "VGA_Controller" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(208): truncated value with size 32 to match size of target (16) File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 208
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(219): truncated value with size 32 to match size of target (16) File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 219
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(228): truncated value with size 32 to match size of target (1) File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 228
+Warning (10230): Verilog HDL assignment warning at VGA_Controller.sv(229): truncated value with size 32 to match size of target (1) File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 229
+Info (12128): Elaborating entity "clock_divider" for hierarchy "clock_divider:clk_divider" File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 24
+Error (12006): Node instance "square1" instantiates undefined entity "muxVGAOut". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 38
+Error (12006): Node instance "square2" instantiates undefined entity "muxVGAOut". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 39
+Error (12006): Node instance "square3" instantiates undefined entity "muxVGAOut". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 40
+Error (12006): Node instance "square4" instantiates undefined entity "muxVGAOut". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 41
+Error (12006): Node instance "square5" instantiates undefined entity "muxVGAOut". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 42
+Error (12006): Node instance "square6" instantiates undefined entity "muxVGAOut". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 43
+Error (12006): Node instance "square7" instantiates undefined entity "muxVGAOut". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 44
+Error (12006): Node instance "square8" instantiates undefined entity "muxVGAOut". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 45
+Error (12006): Node instance "square9" instantiates undefined entity "muxVGAOut". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 46
+Error (12006): Node instance "Square1_x" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 56
+Error (12006): Node instance "Square2_x" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 65
+Error (12006): Node instance "Square3_x" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 73
+Error (12006): Node instance "Square4_x" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 81
+Error (12006): Node instance "Square5_x" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 89
+Error (12006): Node instance "Square6_x" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 97
+Error (12006): Node instance "Square7_x" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 105
+Error (12006): Node instance "Square8_x" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 113
+Error (12006): Node instance "Square9_x" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 121
+Error (12006): Node instance "Square1_o" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 132
+Error (12006): Node instance "Square2_o" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 140
+Error (12006): Node instance "Square3_o" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 148
+Error (12006): Node instance "Square4_o" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 156
+Error (12006): Node instance "Square5_o" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 164
+Error (12006): Node instance "Square6_o" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 172
+Error (12006): Node instance "Square7_o" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 180
+Error (12006): Node instance "Square8_o" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 188
+Error (12006): Node instance "Square9_o" instantiates undefined entity "Pixel_On_Text2". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/Git/lab4TallerDigitalesCorrec/VGA_Controller.sv Line: 196
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 27 errors, 5 warnings
+    Error: Peak virtual memory: 4769 megabytes
+    Error: Processing ended: Wed Oct 05 16:10:18 2022
+    Error: Elapsed time: 00:00:06
+    Error: Total CPU time (on all processors): 00:00:14
+>>>>>>> master
 
 
