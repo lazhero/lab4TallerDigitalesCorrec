@@ -1,5 +1,5 @@
 
-module TicTacToe(input sel,next,rst,clk,Fclk,output [1:0] a,b,c,d,e,f,g,h,i, output [1:0] winner);
+module TicTacToe(input sel,next,rst,clk,Fclk,output [1:0] a,b,c,d,e,f,g,h,i, output [1:0] winner,output[3:0] positionOut);
 	
 	localparam [1:0] p1=2'b01; //player 1
 	localparam [1:0] p2=2'b10; //player 2
@@ -31,4 +31,5 @@ module TicTacToe(input sel,next,rst,clk,Fclk,output [1:0] a,b,c,d,e,f,g,h,i, out
 	assign Pcondition=((sel&checkPos)|(timeout&checkPosRandom)) & !doneGameCondition;
 	assign timeRstCondition=Pcondition;
 	assign winner=victory;
+	assign positionOut=pFinal;
 endmodule 

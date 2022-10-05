@@ -1,21 +1,11 @@
-<<<<<<< HEAD
-Analysis & Synthesis Status : Successful - Tue Oct 04 09:30:24 2022
+Analysis & Synthesis Status : Successful - Wed Oct 05 15:37:24 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-=======
-Analysis & Synthesis Status : Successful - Sun Oct 02 14:21:54 2022
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
->>>>>>> master
 Revision Name : TICTACTOE
-Top-level Entity Name : VGA_Controller
+Top-level Entity Name : TicTacToe
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-<<<<<<< HEAD
 Total registers : 71
-Total pins : 25
-=======
-Total registers : 63
 Total pins : 29
->>>>>>> master
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0
